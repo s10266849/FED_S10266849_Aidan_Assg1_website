@@ -10,10 +10,33 @@ Features :
 -Mobile-Friendly Design: A responsive design ensuring a seamless experience on all devices, whether desktop, tablet, or smartphone.
 -Browser Compatibility: Ensures consistent performance across all major web browsers using normalize.css.
 -----------
-Target Audience:
-1. Car Buyers. Individuals looking to purchase a new or used car, seeking detailed information and a hassle-free browsing experience before visiting the dealership.
-2.First-Time Car Buyers.People buying their first car who need guidance, detailed specs, and financing options to make an informed decision.
-3. Car Enthusiasts. Customers interested in exploring the latest models, car features, and comparing different vehicles based on performance and specifications.
-
-
+Target Audience :
+Car Buyers. Individuals looking to purchase a new or used car, seeking detailed information and a hassle-free browsing experience before visiting the dealership.
+First-Time Car Buyers.People buying their first car who need guidance, detailed specs, and financing options to make an informed decision.
+Car Enthusiasts. Customers interested in exploring the latest models, car features, and comparing different vehicles based on performance and specifications.
+-----------
+Technologies used :
+HTML: Defines the structure and content of a webpage.
+CSS: Styles the appearance of the webpage (layout, colors, fonts).
+JavaScript: Adds interactivity and dynamic behavior to the webpage.
+-----------
+Design : 
+Wireframe on Figma
+Validation using W3C Validator and CSS Jigsaw
+-----------
+Testing :
+Mobile view was completely implemented
+No error message when submitting blank form 
+Filters do not work yet
+-----------
+Credits :
+https://www.bmw.com/en/index.html
+https://www.bugatti.com/
+https://www.lamborghini.com/en-en
+https://www.audi.com/en.html
+https://www.bentleymotors.com/en/models/continental-gt.html?gad_source=1&gclid=Cj0KCQiAr7C6BhDRARIsAOUKifiZOnWYBD0Fr1lFDS5bljsCDUD4GoGkTjzfizm2_RW9HwzvBm5V6ygaAkvgEALw_wcB&gclsrc=aw.ds
+https://www.ferrari.com/en-SG
+https://www.tesla.com/en_sg
+https://www.mercedes-benz.com.sg/
+-----------
 
