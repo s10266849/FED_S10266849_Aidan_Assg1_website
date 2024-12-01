@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Cars | Car Dealership Website Design</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero-image-pl">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="images/hplogo.png" width="170" alt="Crown Cars Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <a href="/pre-loved.html"><li>Pre-Loved</li></a>
+                    <a href="/contact_us.html"><li>Workshop</li></a>
+                    <a href="/contact_us.html"><li>About Us</li></a>
+                    <a href="/contact_us.html"><li>Contact Us</li></a>
+                </ul>
+            </nav>
+            <div class="hero-text-pl">
+                <h1>Pre-Loved Cars</h1>
+                <h2>Discover Your Perfect Ride in Our Pre-Owned Collection</h2>
+                <a href="#pre-loved" class="btn">Shop All</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="Pre-Loved"  class="pl-page-section">
+        <div class="filter-container">
+            <div class="filter">
+                <h3>Filter By</h3>
+                <p>Please select your Brand, Price and Registration Year below</p>
+                <div class="search-container">
+                    <input type="text" placeholder="Search Brands, Price or Registration Year" class="search-input" />
+                    <button class="search-btn">search
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="filter-side-container">
+                <div class="filter-side-card">
+                    <label for="brand">Brand:</label>
+                    <select id="brand" class="dropdown">
+                        <option value="all">All</option>
+                        <option value="brand1">Audi</option>
+                        <option value="brand2">BMW</option>
+                        <option value="brand3">Ferrari</option>
+                        <option value="brand3">Lamborghini</option>
+                        <option value="brand3">Bentley</option>
+                        <option value="brand3">Dodge</option>
+                        <option value="brand3">Mercedes-Benz</option>
+                    </select>
+
+                    <label for="price">Price:</label>
+                    <div class="slider-container">
+                        <input type="range" id="price" min="0" max="1000000" step="1000" value="500000" class="slider">
+                        <div class="price-labels">
+                            <span>$0</span>
+                            <span>$1,000,000</span>
+                        </div>
+                    </div>
+
+                    <label for="year">Registration Year:</label>
+                    <select id="year" class="dropdown">
+                        <option value="all">All</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Car Cards -->
+            <div class="pl-card-container">
+                <!-- Repeated car card structure -->
+                <article class="pl-card">
+                    <a href="pre-loved_individual.html">
+                        <img src="images/fererear.png" alt="Dodge Car">
+                        <h3 class="car-name">Ferrari</h3>
+                        <p class="price">$555,555</p>
+                        <p class="car-miles">23,000KM Reg.2022</p>
+                        <p class="car-details">2022 • Manual • Red • Petrol</p>
+                    </a>
+                </article>
+                <article class="pl-card">
+                    <a href="pre-loved_individual.html">
+                        <img src="images/realbug.jpg" alt="Dodge Car">
+                        <h3 class="car-name">Bugatti Chiron</h3>
+                        <p class="price">$3,000,000</p>
+                        <p class="car-miles">3,000KM Reg.2023</p>
+                        <p class="car-details">2023 • Automatic • Yellow • Petrol</p>
+                    </a>
+                </article>
+                <article class="pl-card">
+                    <a href="pre-loved_individual.html">
+                        <img src="images/bmwww.avif" alt="Dodge Car">
+                        <h3 class="car-name">BMW</h3>
+                        <p class="price">$189,999</p>
+                        <p class="car-miles">1,000KM Reg.2023</p>
+                        <p class="car-details">2023 • Automatic • Blue • Petrol</p>
+                    </a>
+                </article>
+                <article class="pl-card">
+                    <a href="pre-loved_individual.html">
+                        <img src="images/adudidi.png" alt="Dodge Car">
+                        <h3 class="car-name">Audi</h3>
+                        <p class="price">$100,999</p>
+                        <p class="car-miles">100,000KM Reg.2020</p>
+                        <p class="car-details">2020 • Manual • Silver • Petrol</p>
+                    </a>
+                </article>
+                <article class="pl-card">
+                    <a href="pre-loved_individual.html">
+                        <img src="images/testtest.png" alt="Dodge Car">
+                        <h3 class="car-name">Tesla</h3>
+                        <p class="price">$329,999</p>
+                        <p class="car-miles">2,000KM Reg.2023</p>
+                        <p class="car-details">2023 • Automatic • White • Electric</p>
+                    </a>
+                </article>
+                <article class="pl-card">
+                    <a href="pre-loved_individual.html">
+                        <img src="images/bentley.jpg" alt="Dodge Car">
+                        <h3 class="car-name">Bentley</h3>
+                        <p class="price">$589,999</p>
+                        <p class="car-miles">30,000KM Reg.2022</p>
+                        <p class="car-details">2022 • Automatic • Blue • Petrol</p>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class="load-more-container">
+            <button class="pl-load-more-btn">Load More</button>
+        </div>
+    </section>
+       <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+            <a href="index.html">
+                <img src="images/hplogo.png" width="170" alt="Crown Cars Logo">
+            </a>
+                
+                <div class="contact-info">
+                    <h3>Address</h3>
+                    <p>535 Clementi Rd, Singapore 599489</p>
+                    <br>
+                    
+                    <h3>General Enquiries</h3>
+                    <p>+65 9876 54321</p>
+                    <br>
+                    
+                    <h3>Service Hours</h3>
+                    <p>
+                        Monday-Friday: 09:00 - 06:00<br>
+                        Saturday: 09:00 - 06:00<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-right">
+                <h3>Sitemap</h3>
+                <ul class="footer-sitemap">
+                    <a href="/pre-loved.html"><li>Pre-Loved</li></a>
+                    <a href="/contact_us.html"><li>Workshop</li></a>
+                    <a href="/contact_us.html"><li>About Us</li></a>
+                    <a href="/contact_us.html"><li>Contact Us</li></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

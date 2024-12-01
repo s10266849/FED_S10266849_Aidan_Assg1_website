@@ -1,0 +1,1044 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    overflow-x: hidden;
+}
+
+
+/* Typography and Link Styles */
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #efbf04;
+}
+
+p {
+    color: white;
+}
+
+/* Homepage */
+/* Hero Section Styles */
+.hero-image {
+    /* Create a darkened background effect to improve text readability */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hpmain.png");
+  
+    /* Full viewport height with responsive background */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    text-align: left;
+    color: white;
+    top: 30%;
+    padding: 15px;
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+/* Hover effects for navigation */
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #efbf04;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #efbf04;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.small-view-all-button .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #efbf04;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}   
+/* Pre-Loved Section Styles */
+.pre-loved-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F6F6F6;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 360px;
+    height: 350px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.car-name {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.logo{
+    width: 170
+}
+.price {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #efbf04;
+    padding: 5px;
+    width: 108px;
+    height: 30px;
+}
+
+.car-miles {
+    text-align: center;
+    color: white;
+    background-color: #585858;
+    padding: 2px 10px;
+    display: inline-block;
+    width: auto; 
+    word-spacing: 13px;
+}
+
+.car-details {
+    text-align: center;
+    color: #7C7C7C;
+    word-spacing: 9px;
+    line-height: 39px;
+}
+
+.view-all-button {
+    margin-top: 30px;
+}
+
+.small-view-all-button .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #efbf04;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+/* BRAND NEW SECTION */
+.brand-new-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Cards */
+.new-card {
+    position: relative;
+    border-radius: 10px;
+    width: 545px;
+    height: 682px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Car Name Styling (Centered Above the Image) */
+.new-car-name {
+    position: absolute;
+    top: 15%;
+    font-size: 29px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Card Image */
+.new-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Car Info Section */
+.car-info {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.car-info p {
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.shop-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.shop-link:hover {
+    color: #efbf04;
+    border-color: #efbf04;
+}
+
+/* About Us section */
+.about-us-top{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-image: url('images/hpdisc.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.about-content {
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+
+.about-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    background-color: #efbf04;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #efbf04;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.new-card {
+    position: relative;
+    border-radius: 10px;
+    width: 545px;
+    height: 682px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Service Cards */
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.service-card {
+    position: relative;
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-content {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+/* coffee section */
+.coffee{
+    display: flex;
+    flex-direction: column;
+    padding: 180px;
+    background-image: url('images/hpcoffee.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* coffee container */
+.coffee-container {
+    position: relative;  /* Ensures that service content can be positioned inside it */
+}
+.coffee-content {
+    position: absolute;
+    bottom: 50px;
+    max-width: 400px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.coffee-button .btn {
+    background-color: #efbf04;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+/* Footer Styles */
+.footer {
+    background: url('images/hpfooter.png') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    position: relative;
+    text-align: left;
+}
+
+.footer-container {
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    width: 45%;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.footer-right {
+    width: 45%;
+    margin-bottom: 20px;
+    line-height: 3;
+}
+
+.footer-sitemap {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-sitemap li {
+    margin-bottom: 10px;
+}
+
+.footer-sitemap li a:hover {
+    text-decoration: underline;
+    color: #efbf04;
+}
+
+/* Pre-Loved Page */
+.hero-image-pl {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero-image-pl.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text-pl {
+    position: absolute;
+    text-align: right;
+    color: white;
+    bottom: 20%;
+    padding: 15px;
+    right: 5%;
+}
+.pl-page-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F6F6F6;
+}
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the filter box and side filter box */
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.filter{
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%; /* 100% width for mobile-first approach, adjust later for larger screens */
+    max-width: 1226px; /* Max width to prevent overflow */
+    height: 170px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+}
+.filter h3{
+    position: absolute;
+    font-size: 32px;
+    text-align: left;
+    top: 22%;
+    left: 3%;
+}
+.filter p{
+    position: absolute;
+    color: #7C7C7C;
+    line-height: 25.48px;
+    font-size: 20px;
+    text-align: left;
+    bottom: 22%;
+    left: 3%;
+}
+.search-container {
+    position: absolute;
+    bottom: 22%;
+    right: 3%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.search-input {
+    width: 420px;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+}
+
+.search-btn {
+    background-color: #efbf04; /* Adjust the color to your theme */
+    color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: bold;
+    height: 40px;
+    width: 65px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-btn i {
+    font-size: 18px;
+}
+
+/* Add hover effect for the button */
+.search-btn:hover {
+    background-color: #efbf04;
+}
+
+/* Container for the entire filter */
+.filter-side-container {
+    display: flex;
+    padding: 30px 17px;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Styling for the card */
+.filter-side-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 316px;
+    height: 324px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Card labels and dropdown */
+.filter-side-card label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+.filter-side-card .dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #A3A3A3;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+    color: #7C7C7C;
+}
+
+/* Styling for the slider */
+.slider-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    background: #efbf04;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Slider thumb (custom handle) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Price labels */
+.price-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Cards for PL section */
+.pl-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+    gap: 20px; /* Space between the cards */
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Adjust space below the cards */
+    padding: 0 15px; /* Optional padding for responsiveness */
+}
+
+
+.pl-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 414px;
+    height: 384px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.pl-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.pl-car-miles {
+    text-align: center;
+    color: white;
+    background-color: #585858;
+    padding: 2px 10px;
+    display: inline-block;
+    width: auto; 
+    word-spacing: 13px;
+}
+
+.pl-car-details {
+    text-align: center;
+    color: #7C7C7C;
+    word-spacing: 9px;
+    line-height: 30px;
+}
+.pl-btn-container {
+    display: flex;
+    margin-top: 30px; /* Optional space above the button */
+}
+.pl-load-more-btn {
+    display: inline-block;
+    color: #efbf04;
+    border: 1px solid #efbf04;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* pre-loved individual code */
+.pli-hero-image {
+    /* Create a darkened background effect to improve text readability */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pli-hero.png");
+  
+    /* Full viewport height with responsive background */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.pli-display-section{
+    display:flex;
+    padding: 50px 20px;
+    background-color: #E1E1E1;
+    justify-content: center;
+}
+
+.pli-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.pli-display-card {
+    background: white;
+    border: 1px solid #ddd;
+    width: 327px;
+    height: 226px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.pli-display-card img {
+    object-fit: cover;  /* Ensures the image covers the area */
+    width: 100%;        /* Makes the image fill the width */
+    height: 100%;       /* Makes the image fill the height */
+    margin-bottom: 10px;
+}
+
+.pli-overview-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the filter box and side filter box */
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.pli-overview-container p{
+    
+    color: black
+}
+.pli-overview-container h3{
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+    left: 15%;
+    color:black;
+    padding: 38px 0px;
+}
+.pli-overview-right-card h3{
+    position: absolute;
+    font-size: 20px;
+    text-align: left;
+    left: 6%;
+    color:black;
+    padding: 38px 0px;
+}
+.pli-overview-container h1{
+    position: absolute;
+    font-size: 30px;
+    text-align: left;
+    left: 6%;
+    color:black;
+    padding: 70px 0px;
+}
+
+.pli-overview-left-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 70px 20px;
+}
+.pli-overview-left-card
+{
+    background: white;
+    border: 1px solid #ddd;
+    width: 150px;
+    height: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.pli-overview-right-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+.pli-overview-right-card
+{
+    background: white;
+    border: 1px solid #ddd;
+    width: 338px;
+    height: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.pli-overview-btn-container{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    margin-top: 35%;
+    left: 6%;
+    
+}
+.book-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 7px 30px;
+    font-size: 12px;
+    color: white;
+    background-color: #efbf04;
+    border: 1px solid #efbf04;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.enquire-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 7px 30px;
+    font-size: 12px;
+    background-color: white;
+    color: #efbf04;
+    border: 1px solid #efbf04;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Test Drive Form */
+.test-drive-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pli-testdrive.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.test-drive-text {
+    position: absolute;
+    text-align: left;
+    color: white;
+    top: 15%;
+    left: 10%;
+}
+.test-drive-text h1 {
+    font-size: 40px;
+}
+.test-drive-text h2 {
+    font-size: 30px;
+}
+
+.td-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    column-gap: 50px; /* Reduced gap between inputs */
+    row-gap: 15px;
+    max-width: 550px;
+    top: 32%;
+    position: relative;
+    padding: 15px 0px;
+}
+.td-form-input {
+    width: 250px; /* Use full width within the grid cell */
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+}
+.td-form-container .dropdown {
+    width: 250px; /* Use full width within the grid cell */
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+}
+.dropdown option {
+    background-color: #efbf04; /* Light gray background */
+    color: white; /* Text color */
+}
+.td-big-form-container{
+    display: flex;
+    column-gap: 50px; /* Reduced gap between inputs */
+    row-gap: 15px;
+    max-width: 550px;
+    top: 32%;
+    position: relative;
+    padding: 15px 0px;
+    justify-items: center;
+}
+.td-big-form-input {
+    width: 550px; /* Use full width within the grid cell */
+    height: 100px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+}
+
+.td-form-button {
+    width: 550px;;
+    height: 50px;
+    background-color: #efbf04;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.td-form-button:hover {
+    background-color: #efbf04; /* Darken button on hover */
+}
+
+.td-form-button:active {
+    background-color: #efbf04; /* Darken button on click */
+}
+
+/* Contact Us page */
+.contact-us-hero-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/contact-us-hero.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.contact-us-text {
+    position: absolute;
+    text-align: left;
+    color: white;
+    bottom: 15%;
+    left: 10%;
+}
+
+.contact-us-text h2{
+    font-size: 32px;
+}
+
+.contact-us-text {
+    position: absolute;
+    text-align: left;
+    color: white;
+    bottom: 15%;
+    left: 10%;
+}
+.contact-us-section{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F6F6F6;
+    position: relative;
+    display:
+}
+.cu-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cu-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+    column-gap: 50px; /* Reduced gap between inputs */
+    row-gap: 15px;
+    max-width: 550px;
+    position: relative;
+    padding: 15px 0px;
+    justify-self: center;
+}
+
+/* Card labels and dropdown */
+.cu-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #efbf04;
+    text-align: left;
+}
+.cu-form-input {
+    width: 250px; /* Use full width within the grid cell */
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+}
+.cu-big-form-input {
+    width: 550px; /* Use full width within the grid cell */
+    height: 100px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+}
+.cu-form-button {
+    width: 550px;;
+    height: 50px;
+    background-color: #efbf04;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cu-form-button:hover {
+    background-color: #efbf04; /* Darken button on hover */
+}
+
+.cu-form-button:active {
+    background-color: #efbf04; /* Darken button on click */
+}
+
+
